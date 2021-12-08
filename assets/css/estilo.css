@@ -1,0 +1,95 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 120px 1fr 60px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "cabecalho" "principal" "rodape";
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+    background-color: rgb(0, 195, 255);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    z-index: 1;
+    box-shadow: 0px 12px 25px 20px rgb(0, 195, 255);
+}
+
+.cabecalho > h1 {
+    margin: 0px;
+    font-weight: 300;
+    font-size: 2.8rem;
+}
+
+.cabecalho > h2 {
+    margin: 0px;
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+
+.principal {
+    grid-area: principal;
+    height: calc(100vh - 180px);
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(255, 255, 255)
+}
+
+::-webkit-scrollbar-button{
+    background-color: rgb(255, 255, 255)
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 195, 255);
+    border-radius: 50px
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(0, 129, 168);
+}
+
+.conteudo{
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 20px;
+    color: rgb(0, 63, 122);
+}
+
+.modulos {
+    display: flex;
+}
+
+.rodape{
+    grid-area: rodape;
+    background-color: rgb(0, 195, 255);
+    z-index: 1;
+    box-shadow: 0px -12px 25px 20px rgb(0, 195, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: rgb(145, 255, 0);
+    position: sticky;
+}
+
+nav ul li a {
+    color: rgb(0, 63, 122);
+}

@@ -9,7 +9,10 @@ body {
     display: grid;
     grid-template-rows: 120px 1fr 60px;
     grid-template-columns: 1fr;
-    grid-template-areas: "cabecalho" "principal" "rodape";
+    grid-template-areas: 
+    "cabecalho" 
+    "principal"
+    "rodape";
 }
 
 .cabecalho {
@@ -42,7 +45,7 @@ body {
     height: calc(100vh - 180px);
     background-color: rgb(255, 255, 255);
     padding: 20px;
-}
+} 
 
 ::-webkit-scrollbar{
     width: 5px;
@@ -73,8 +76,26 @@ body {
     color: rgb(0, 63, 122);
 }
 
-.modulos {
+.modulos{
     display: flex;
+    justify-content: space-around;
+}
+
+.texto:link{
+    text-decoration: none;
+    justify-content: center;
+}
+
+.texto:visited{
+    color: rgb(0, 63, 122);
+}
+
+.texto:hover{
+    color: rgb(0, 195, 255);
+}
+
+.texto:active{
+    color: rgb(112, 222, 255);
 }
 
 .rodape{
@@ -90,6 +111,6 @@ body {
     position: sticky;
 }
 
-nav ul li a {
-    color: rgb(0, 63, 122);
+.center{
+  text-align: center; 
 }

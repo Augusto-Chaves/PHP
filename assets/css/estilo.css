@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0px;
     display: grid;
-    grid-template-rows: 120px 1fr 60px;
+    grid-template-rows: 15% 1fr 5%;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "cabecalho" 
@@ -17,7 +17,7 @@ body {
 
 .cabecalho {
     grid-area: cabecalho;
-    background-color: rgb(0, 195, 255);
+    background-color: rgb(0, 221, 255);
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@ body {
     align-items: center;
     padding-bottom: 10px;
     z-index: 1;
-    box-shadow: 0px 12px 25px 20px rgb(0, 195, 255);
+    box-shadow: 0px 12px 25px 20px rgb(0, 221, 255);
 }
 
 .cabecalho > h1 {
@@ -42,7 +42,7 @@ body {
 
 .principal {
     grid-area: principal;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 20vh);
     background-color: rgb(255, 255, 255);
     padding: 20px;
 } 
@@ -52,15 +52,15 @@ body {
 }
 
 ::-webkit-scrollbar-track{
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(255, 255, 255);
 }
 
 ::-webkit-scrollbar-button{
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(255, 255, 255);
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(0, 195, 255);
+    background-color: rgb(0, 221, 255);
     border-radius: 50px
 }
 
@@ -87,27 +87,27 @@ body {
 }
 
 .texto:visited{
-    color: rgb(0, 63, 122);
+    color: rgb(0, 163, 189);
 }
 
 .texto:hover{
-    color: rgb(0, 195, 255);
+    color: rgb(0, 221, 255);
 }
 
 .texto:active{
-    color: rgb(112, 222, 255);
+    color: rgb(109, 235, 255);
 }
 
 .rodape{
     grid-area: rodape;
-    background-color: rgb(0, 195, 255);
+    background-color: rgb(0, 221, 255);
+    box-shadow: 0px -12px 25px 20px rgb(0, 221, 255);
     z-index: 1;
-    box-shadow: 0px -12px 25px 20px rgb(0, 195, 255);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.3rem;
-    color: rgb(145, 255, 0);
+    color: rgb(138, 255, 42);
     position: sticky;
 }
 
